@@ -5,13 +5,26 @@
    font-family:'Noto Serif JP',serif;
    color:#383c3c;
    line-height: 20px;
-   
-   background-image: url(https://drive.google.com/uc?export=download&id=121_CN3QBCf8_Ur9JKAJfl0WTJbloFgGA);
-   background-attachment: fixed;
-   background-size: cover;
-   background-color:rgba(255,255,255,0.4);
-   background-blend-mode:lighten;
+    
    text-align:center;
+  }
+  
+   body::before {
+    content: "";
+    background: url(https://drive.google.com/uc?export=download&id=121_CN3QBCf8_Ur9JKAJfl0WTJbloFgGA) no-repeat center center;
+    background-size: cover;
+    background-color:rgba(255,255,255,0.4);
+    background-blend-mode:lighten;
+    background-color:rgba(255,255,255,0.4);
+    background-blend-mode:lighten;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    transform: translateZ(0);
   }
  
  .container {
