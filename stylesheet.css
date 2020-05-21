@@ -1,20 +1,25 @@
 @media only screen and (max-device-width: 480px) {
 
   /* スマホ用のCSS */
+  html {
+    overflow-y:scroll;
+}
+
   body{
    font-family:'Noto Serif JP',serif;
    color:#383c3c;
    line-height: 20px;
-    
-   text-align:center;
+   
+   overflow:hidden;
+
+   width: 380px;
+   margin: 0 auto;
   }
   
    body::before {
     content: "";
     background: url(https://drive.google.com/uc?export=download&id=121_CN3QBCf8_Ur9JKAJfl0WTJbloFgGA) no-repeat center center;
     background-size: cover;
-    background-color:rgba(255,255,255,0.4);
-    background-blend-mode:lighten;
     background-color:rgba(255,255,255,0.4);
     background-blend-mode:lighten;
     display: block;
@@ -28,11 +33,9 @@
   }
  
  .container {
-   
+   text-align:center;
    width:100%;
    height:100%;
- 
-   padding-right:30px;
  }
  
  .area{
@@ -43,7 +46,6 @@
  
  .like-title{
    font-size:12px;
-   text-align:center;
  }
  
  ul{
@@ -70,38 +72,15 @@
  .icon {
    width:150px;
    height:150px;
-   padding-left:20px;
  }
  
  iframe{
    width:280px;
    height:157.5px;
-   padding-left:20px;
  }
  
- .attention{
-   padding: 200px 15px 0px 15px;
- }
- 
- .contents{
-   padding:50px 15px 0px 15px;
- }
- 
- 
- .rireki{
-   text-align:left;
- }
- 
- .video{
-   text-align:center;
- }
- 
- .like{
-   text-align:center;
- }
- 
-.list{
-  text-align:center;
+.rireki{
+  text-align:left;
 }
 
  }
