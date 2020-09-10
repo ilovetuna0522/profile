@@ -1,4 +1,4 @@
-@media only screen and (max-device-width: 480px) {
+@media only screen and (max-device-width: 486px) {
 
   /* スマホ用のCSS */
   html {
@@ -61,7 +61,8 @@
  
  ul{
   list-style:none;   
-  
+  margin:0;
+  padding:0px 15px 0px 15px;
  }
  
  li{
@@ -84,6 +85,7 @@
  .icon {
    width:150px;
    height:150px;
+   margin-top:228px;
  }
  
  iframe{
@@ -93,6 +95,7 @@
  
 .rireki{
   text-align:left;
+  margin-bottom:228px;
 }
 
 .attention{
