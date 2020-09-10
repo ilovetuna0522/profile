@@ -1,0 +1,209 @@
+@media only screen and (max-device-width: 486px) {
+
+  /* スマホ用のCSS */
+  html {
+    overflow-y:scroll;
+}
+
+  body{
+   font-family:'Noto Serif JP',serif;
+   color:#383c3c;
+   line-height: 20px;
+   
+   overflow:hidden;
+
+   width: 380px;
+   margin: 0 auto;
+
+   min-height:-webkit-fill-avaiable;
+  }
+  
+   body::before {
+    content: "";
+    background: url(https://drive.google.com/uc?export=download&id=121_CN3QBCf8_Ur9JKAJfl0WTJbloFgGA) no-repeat center center;
+    background-size: cover;
+    background-color:rgba(255,255,255,0.4);
+    background-blend-mode:lighten;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    transform: translateZ(0);
+  }
+ 
+ .container {
+   text-align:center;
+   width:100%;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+
+   overflow: auto;
+   scroll-snap-type: y;
+ 
+ }
+ 
+ .area{
+   height: 100vh;
+   width: 100%;
+   scroll-snap-align:start;
+   display: block;
+ }
+ 
+ .like-title{
+   font-size:12px;
+ }
+ 
+ ul{
+  list-style:none;   
+  margin:0;
+  padding:0px 15px 0px 15px;
+ }
+ 
+ li{
+   font-size:9px;
+   margin:15px;
+ }
+ 
+ a{
+   color:#474a4d;
+ }
+ 
+ a:hover {
+   color:#9ea1a3;
+ }
+ 
+ a:active {
+   color:black;
+ }
+ 
+ .icon {
+   width:150px;
+   height:150px;
+   margin-top:228px;
+ }
+ 
+ iframe{
+   width:280px;
+   height:157.5px;
+ }
+ 
+.rireki{
+  text-align:left;
+  margin-bottom:228px;
+}
+
+.attention{
+  padding-top:60%;
+}
+
+}
+
+
+@media only screen and (min-device-width: 769px) {
+
+ /* PC用のCSS */
+  body{
+  text-align: center;
+  font-family:'Noto Serif JP',serif;
+  color:#383c3c;
+  line-height: 30px;
+  list-style: none;
+  
+  background-image: url(https://drive.google.com/uc?export=download&id=11yhzP8kaadhQAH3ICRnjw4DPh44gbP4C);
+  background-attachment: fixed;
+  background-size: cover;
+  background-color:rgba(255,255,255,0.4);
+  background-blend-mode:lighten;
+}
+
+/*　さわるなキケン　*/
+.container{
+  overflow: auto;
+  scroll-snap-type: y;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+area{
+  scroll-snap-align: start;
+  height: 100vh;
+
+  display: block;
+  width: 100vh;
+}
+
+.contents-top img{
+  vertical-align: middle;
+}
+
+.contents-top span{
+vertical-align: middle;
+} 
+/*さわるなキケン*/
+
+ul{
+  display:block;
+  list-style:none;
+  font-size:18px;
+}
+
+li{
+  margin:20px 0px;
+}
+
+.like-title{
+  font-size:23px;
+}
+
+a{
+  color:#474a4d;
+}
+
+a:hover {
+  color:#9ea1a3;
+}
+
+a:active {
+  color:black;
+}
+
+.rireki{
+  text-align: left;
+}
+
+iframe{
+  width:300px;
+  height:200px;
+  padding-bottom:350px;
+}
+
+img{
+  width:300px;
+  height:300px;
+}
+
+.attention{
+  padding:0px 370px;
+}
+
+}
+
+/*PCの場合*/
+.pc	{ display:inline!important; }
+.video	{ display:none!important; }
+
+@media screen and (max-width: 768px) {
+/*タブレット、スマホの場合*/
+.pc	{ display:none!important; }
+.video { display:inline!important; }
+}
